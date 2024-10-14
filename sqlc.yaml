@@ -1,0 +1,11 @@
+version: "2"
+sql:
+  - schema: "schema.sql"
+    queries: "data/query/"
+    engine: "mysql"
+    database:
+      uri: ""
+    gen:
+      go:
+        package: "Twitter"
+        out: "data/DB/repo"
